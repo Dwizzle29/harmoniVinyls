@@ -1,6 +1,7 @@
 import "./styles/styles.css";
 import "./styles/icons.css";
 import "./styles/navigation.css";
+import "./styles/home.css";
 import React from "react";
 import Navbar from "./components/Navbar.jsx";
 import "./App.css";
@@ -25,7 +26,7 @@ function App() {
           <Route path="/account" element={<Account />}></Route>
           <Route path="/shop" element={<Shop />}></Route>
           <Route path="/login" element={<Login />}></Route>
-          <Route path="/product" element={<Product />}></Route>
+          <Route path="/images/:imageId" element={<Product />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="*" element={<h1>PAGE NOT FOUND</h1>}></Route>
         </Routes>
