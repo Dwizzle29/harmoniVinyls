@@ -1,0 +1,17 @@
+body {
+  font-family: normalidad-wide, sans-serif;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #77d7d587;
+  color: rgba(47, 55, 89, 0.548);
+  text-align: center;
+  margin-top: 20px;
+  min-height: 50px;
+}
+.App {
+  min-height: 100vh;
+}
