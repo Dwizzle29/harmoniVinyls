@@ -36,3 +36,16 @@
   justify-content: center;
   align-items: center;
 }
+.shop-card-icons {
+  display: flex;
+  align-items: flex-end;
+  max-width: 200px;
+}
+.shop-card-icons .mdi--heart-outline {
+  margin-right: 30%;
+}
+.shop-card-icons .mdi--cart-outline {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}

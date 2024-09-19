@@ -12,7 +12,13 @@ const ShopVinylCard = ({ image }) => {
             alt={`image-${image.id}`}
             className="card-vinyl-image"
           />
+          <p>{image.name}</p>
+          <p>{image.price}</p>
         </a>
+        <div className="shop-card-icons">
+          <span className="mdi--heart-outline"></span>
+          <span className="mdi--cart-outline"></span>
+        </div>
       </div>
     </div>
   );
