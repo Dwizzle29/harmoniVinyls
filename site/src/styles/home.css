@@ -1,5 +1,5 @@
 /* Smaller Screens */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   .home-banner {
     margin: 0;
     display: flex;
@@ -7,7 +7,7 @@
     justify-content: center;
   }
   .home-img {
-    height: 170px;
+    height: 70px;
     width: 500px;
     max-inline-size: 100%;
     object-fit: cover;
@@ -18,15 +18,47 @@
     text-align: center;
     font-size: small;
     font-weight: 200;
+    color: #647fa7;
   }
   .welcome {
     font-size: medium;
     padding-bottom: 0;
     margin-bottom: -7px;
+    color: #647fa7;
+  }
+  .home-logo-container {
+    display: flex;
+    width: 40%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-inline: auto;
+  }
+
+  .home-logo img {
+    width: 100px;
+    min-height: 100px;
+  }
+
+  .home-introduction span {
+    font-family: auster, sans-serif;
+    font-weight: 500;
+    color: #647fa7;
+    font-size: medium;
+  }
+  .home-introduction p {
+    color: #374244;
+    font-weight: 200;
+  }
+
+  .home-introduction {
+    font-size: small;
+
+    text-align: center;
   }
 }
 /* Larger Screens  */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1200px) {
   .home-container {
     margin-inline: 40px;
     display: grid;
@@ -37,21 +69,54 @@
     height: 450px;
     width: 1200px;
     max-inline-size: 100%;
-    object-fit: cover;
+    object-fit: none;
   }
 
   .welcome-message {
     position: absolute;
-    top: 40%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     font-size: x-large;
     font-weight: 200;
+    color: #647fa7;
   }
   .welcome {
     font-size: xx-large;
     padding-bottom: 0;
     margin-bottom: -10px;
+    color: #647fa7;
+  }
+  .home-logo-container {
+    display: grid;
+    width: 1200px;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+  }
+
+  .home-logo img {
+    width: 240px;
+    min-height: 202px;
+  }
+  .home-logo {
+    margin-inline-start: 100px;
+  }
+  .home-introduction span {
+    font-family: auster, sans-serif;
+    font-weight: 500;
+    color: #647fa7;
+    font-size: larger;
+  }
+  .home-introduction p {
+    color: #374244;
+    font-weight: 200;
+  }
+
+  .home-introduction {
+    font-size: x-large;
+    margin-right: 240px;
+    margin-left: -100px;
+    text-align: center;
   }
 }

@@ -1,0 +1,122 @@
+/* Smaller Screens */
+@media screen and (max-width: 1200px) {
+  footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #f1ede9;
+    color: rgba(47, 55, 89, 0.548);
+    text-align: center;
+    margin-top: 20px;
+    min-height: 200px;
+    filter: drop-shadow(0 0 0.12rem rgba(0, 0, 0, 0.196));
+  }
+  .footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: left;
+    width: 100%;
+  }
+  .footer-section-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-inline: 20px;
+  }
+  .footer-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-inline: 90px;
+  }
+  .footer-section-image img {
+    visibility: hidden;
+    width: 0%;
+  }
+  .footer-container h3 {
+    font-family: auster, sans-serif;
+    font-weight: 200;
+    font-size: smaller;
+    color: #fa9a8e;
+    text-align: center;
+  }
+  .footer-container ul ol {
+    text-align: left;
+    font-weight: 200;
+    font-size: small;
+    margin-left: -75px;
+    color: #374244;
+  }
+  .footer-container p {
+    text-align: left;
+    font-weight: 200;
+    font-size: small;
+    color: #374244;
+  }
+  .mobile-img {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    height: auto;
+
+    width: 83px;
+    margin-inline: 30%;
+  }
+}
+/* Larger Screens  */
+@media screen and (min-width: 1200px) {
+  footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #f1ede9;
+    color: rgba(47, 55, 89, 0.548);
+    text-align: center;
+    margin-top: 20px;
+    min-height: 300px;
+    filter: drop-shadow(0 0 0.12rem rgba(0, 0, 0, 0.196));
+  }
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    text-align: left;
+    width: 100%;
+  }
+  .footer-section-image {
+    display: flex;
+    margin-top: 0;
+    align-items: center;
+  }
+  .footer-section-image img {
+    width: 169px;
+    min-height: 145px;
+    margin-right: 50px;
+  }
+  .footer-container h3 {
+    font-family: auster, sans-serif;
+    font-weight: 200;
+    font-size: x-large;
+    color: #fa9a8e;
+  }
+  .footer-container ul ol {
+    text-align: left;
+    font-weight: 200;
+    font-size: x-large;
+    margin-left: -75px;
+    color: #374244;
+  }
+  .footer-container p {
+    text-align: left;
+    font-weight: 200;
+    font-size: x-large;
+    color: #374244;
+  }
+  .mobile-img {
+    visibility: hidden;
+    width: 0px;
+  }
+}

@@ -2,6 +2,8 @@ import "./styles/styles.css";
 import "./styles/icons.css";
 import "./styles/navigation.css";
 import "./styles/home.css";
+import "./styles/footer.css";
+import "./styles/shop.css";
 import React from "react";
 import Navbar from "./components/Navbar.jsx";
 import "./App.css";
@@ -31,6 +33,7 @@ function App() {
           <Route path="*" element={<h1>PAGE NOT FOUND</h1>}></Route>
         </Routes>
       </div>
+      <Footer />
     </Router>
   );
 }

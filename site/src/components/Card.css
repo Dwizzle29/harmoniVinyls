@@ -1,37 +1,187 @@
 /* Smaller Screens */
+
 @media screen and (max-width: 1200px) {
+  /* Card.css */
+  .card-container {
+    width: 100%;
+    max-width: 400px;
+
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+  }
+  .vinyl-row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 5 items per row */
+    gap: 10px 20px; /* Adjust gap between items */
+
+    place-content: center;
+    margin-right: -5px;
+  }
+  .card {
+    height: 130px;
+    max-width: 130px;
+    max-height: 130px;
+    margin-inline: 10px;
+    margin-block: 10px;
+    padding: 10px;
+    background-color: #b8b2c11b;
+    border-radius: 10px;
+    border: 1px solid #b8b2c139;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .card-title {
+    height: 130px;
+    max-width: 130px;
+    max-height: 130px;
+    margin-inline: 10px;
+    margin-block: 10px;
+    padding: 10px;
+    background-color: #94c9e4;
+    border: 1px solid #b8b2c139;
+    text-align: right;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+  }
+  .card-images {
+    min-height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .card-images a {
+    max-height: 130px;
+    z-index: 100;
+  }
+  .card-image {
+    object-fit: cover;
+
+    border: 1px solid #ddd;
+    max-width: 130px;
+    min-height: 130px;
+  }
+  .card-text {
+    text-align: right;
+    margin-top: 30px;
+    color: #346ca3;
+    font-family: normalidad-extended, sans-serif;
+    font-size: large;
+    font-weight: 500;
+  }
+  .card-music {
+    font-family: normalidad-extended, sans-serif;
+    font-size: large;
+    font-weight: 400;
+    margin-top: -2px;
+    text-align: right;
+  }
+  .card-title-box {
+    height: 130px;
+    max-width: 130px;
+    max-height: 130px;
+    margin-inline: 10px;
+    margin-block: 10px;
+    padding: 10px;
+    background-color: #94c9e4;
+    border: 1px solid #b8b2c139;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 /* Larger Screens  */
 @media screen and (min-width: 1200px) {
   /* Card.css */
-  .card {
+  .card-container {
     width: 100%;
-    max-width: 400px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+
     text-align: center;
-  }
-
-  .card-title {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-  }
-
-  .card-images {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 2px;
+  }
+  .vinyl-row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 5 items per row */
+    gap: 10px 20px; /* Adjust gap between items */
+
+    place-content: center;
+    margin-right: -5px;
+  }
+  .card {
+    height: 130px;
+    max-width: 130px;
+    max-height: 130px;
+    margin-inline: 10px;
+    margin-block: 10px;
+    padding: 10px;
+    background-color: #b8b2c11b;
+    border-radius: 10px;
+    border: 1px solid #b8b2c139;
+    text-align: right;
+    display: flex;
+    align-items: center;
     justify-content: center;
   }
-
+  .card-title {
+    height: 130px;
+    max-width: 130px;
+    max-height: 130px;
+    margin-inline: 10px;
+    margin-block: 10px;
+    padding: 10px;
+    background-color: #94c9e4;
+    border: 1px solid #b8b2c139;
+    text-align: right;
+    display: flex;
+    color: #346ca3;
+    align-items: center;
+    justify-content: center;
+  }
+  .card-images {
+    min-height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .card-images a {
+    max-height: 130px;
+    z-index: 100;
+  }
   .card-image {
-    width: 100px;
-    height: 100px;
     object-fit: cover;
-    border-radius: 8px;
-    border: 2px solid #ddd;
+
+    border: 1px solid #ddd;
+    max-width: 130px;
+    min-height: 130px;
+  }
+  .card-text {
+    text-align: right;
+    margin-top: 30px;
+
+    font-family: normalidad-extended, sans-serif;
+    font-size: large;
+    font-weight: 500;
+  }
+  .card-music {
+    font-family: normalidad-extended, sans-serif;
+    font-size: large;
+    font-weight: 400;
+    margin-top: -2px;
+    text-align: right;
   }
 }

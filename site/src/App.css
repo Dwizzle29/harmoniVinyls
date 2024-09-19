@@ -1,17 +1,19 @@
 body {
   font-family: normalidad-wide, sans-serif;
+  color: #374244;
 }
 
-footer {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  background-color: #77d7d587;
-  color: rgba(47, 55, 89, 0.548);
-  text-align: center;
-  margin-top: 20px;
-  min-height: 50px;
+a,
+a:visited,
+a:active {
+  color: #647fa7;
+  text-decoration: none;
 }
+a:hover {
+  color: #346ca3;
+  text-decoration: none;
+}
+
 .App {
   min-height: 100vh;
 }
