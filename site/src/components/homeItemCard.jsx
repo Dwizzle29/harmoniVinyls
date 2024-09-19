@@ -1,7 +1,6 @@
 // Card.js
 import React from "react";
 import "./Card.css"; // Import your CSS for styling
-import { NavLink } from "react-router-dom";
 
 const HomeItemCard = ({ image }) => {
   return (

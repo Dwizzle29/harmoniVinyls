@@ -10,6 +10,7 @@ export default function Shop() {
         <div className="shop-banner">
           <img src={background} alt="Shop Banner" className="shop-img"></img>
         </div>
+        <div></div>
         <div className="filtering-functions"></div>
         <div className="shop-cards-grid">
           {featuredVinyl

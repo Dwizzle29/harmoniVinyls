@@ -1,7 +1,6 @@
 // Card.js
 import React from "react";
 import "../styles/shop.css"; // Import your CSS for styling
-import { NavLink } from "react-router-dom";
 
 const ShopVinylCard = ({ image }) => {
   return (
