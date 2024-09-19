@@ -1,6 +1,6 @@
 import background from "../assets/backgroundSmall.png";
 import images from "../components/data/images.js";
-import ShopVinylCard from "../components/shopVinylCard";
+import ShopVinylCard from "../components/shopVinylCard.jsx";
 
 export default function Shop() {
   const featuredVinyl = images.filter((image) => image.isFeatured);

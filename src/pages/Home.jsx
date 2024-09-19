@@ -1,5 +1,5 @@
 import React from "react";
-import HomeItemCard from "../components/homeItemCard";
+import HomeItemCard from "../components/homeItemCard.jsx";
 import images from "../components/data/images.js";
 import background from "../assets/backgorund2.png";
 import logo from "../assets/logo.png";
