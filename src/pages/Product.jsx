@@ -7,7 +7,7 @@ const Product = () => {
   return (
     <div>
       <h1>Product Page for {imageId}</h1>
-      {/* Fetch and display product details based on productId */}
+      <h2>Work in progress</h2>
     </div>
   );
 };

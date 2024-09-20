@@ -2,7 +2,7 @@ const images = [
   {
     id: 0,
     name: "5SOS Front",
-    image: require("../../assets/5SOSBack.png"),
+    image: require("../../assets/5SOSFront.png"),
     description: "5 seconds of summer",
     price: "$40.00",
     release: "2022",
@@ -11,7 +11,7 @@ const images = [
   {
     id: 1,
     name: "5SOS",
-    image: require("../../assets/5SOSFront.png"),
+    image: require("../../assets/5SOSBack.png"),
     description: "5 seconds of summer",
   },
   {
@@ -45,24 +45,24 @@ const images = [
 
   {
     id: 7,
-    name: "5SOS Front",
-    image: require("../../assets/5SOSBack.png"),
-    description: "5 seconds of summer",
-    price: "$40.00",
-    release: "2022",
+    name: "Soul Fire JennI",
+    image: require("../../assets/SoulFireFront.png"),
+    description: "Soul Fire",
+    price: "$50.00",
+    release: "2019",
     isFeatured: true,
   },
   {
     id: 8,
-    name: "5SOS",
-    image: require("../../assets/5SOSFront.png"),
-    description: "5 seconds of summer",
+    name: "Soul Fire Front",
+    image: require("../../assets/SoulFireFront.png"),
+    description: "Soul Fire ",
   },
   {
     id: 9,
-    name: "5SOS Disc",
-    image: require("../../assets/5SOSDisc Background Removed.png"),
-    description: "5 seconds of summer",
+    name: "Soul Fire Disc",
+    image: require("../../assets/SoulFireDisc.png"),
+    description: "Soul Fire ",
   },
   {
     id: 10,
