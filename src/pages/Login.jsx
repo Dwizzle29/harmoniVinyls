@@ -1,3 +1,7 @@
 export default function Login() {
-  return <div>Login</div>;
+  return (
+    <div className="container">
+      <h1>Site under construction</h1>
+    </div>
+  );
 }

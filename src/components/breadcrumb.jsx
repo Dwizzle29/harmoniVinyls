@@ -11,7 +11,7 @@ const Breadcrumb = () => {
   // Build the breadcrumbs array
 
   const labelMapping = {
-    product: "Products",
+    shop: "Products",
     // Add a default label for dynamic IDs or handle conditionally
   };
 
