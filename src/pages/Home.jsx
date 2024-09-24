@@ -3,7 +3,7 @@ import HomeItemCard from "../components/homeItemCard.jsx";
 import images from "../components/data/images.js";
 import background from "../assets/backgorund2.png";
 import logo from "../assets/logo.png";
-
+import carosel from "../assets/caroselToBeAdded.png";
 export default function Home() {
   // Filter the images to get only featured items
   const featuredVinyl = images.filter((image) => image.isFeatured);
@@ -18,7 +18,10 @@ export default function Home() {
 
         <img src={background} alt="Home Banner" className="home-img"></img>
       </div>
-      <div className="home-carousel-container"></div>
+      <div className="home-carousel-container">
+        <h1>new releases!</h1>
+        <img src={carosel} alt="Carousel Banner" className="carousel-img"></img>
+      </div>
 
       <div className="home-logo-container">
         <div className="home-logo">

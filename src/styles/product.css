@@ -1,0 +1,128 @@
+/* Smaller Screens */
+
+@media screen and (max-width: 1200px) {
+  .vinyl-item-page {
+    display: grid;
+    grid-template-rows: 1fr;
+    place-items: center;
+
+    margin-inline: auto;
+  }
+
+  .vinyl-item-card {
+    height: 400px;
+    width: 90%;
+    max-width: 400px;
+    max-height: 400px;
+    margin-inline: 10px;
+    margin-block: 10px;
+    padding: 10px;
+    background-color: #b8b2c11b;
+    border-radius: 10px;
+    border: 1px solid #b8b2c139;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .item-images {
+    max-height: 350px;
+    min-height: 100px;
+  }
+}
+
+/* Larger Screens  */
+@media screen and (min-width: 1200px) {
+  .vinyl-item-page {
+    display: grid;
+    grid-template-rows: 1fr;
+    place-items: center;
+
+    margin-inline: auto;
+  }
+
+  .vinyl-item-card {
+    height: 400px;
+    width: 1200px;
+    max-width: 1200px;
+    max-height: 400px;
+    margin-inline: 10px;
+    margin-block: 10px;
+    padding: 10px;
+    background-color: #b8b2c11b;
+    border-radius: 10px;
+    border: 1px solid #b8b2c139;
+
+    display: flex;
+  }
+
+  .item-images {
+    max-height: 400px;
+    min-height: 300px;
+  }
+
+  .vinyl-text {
+    margin-left: 20px;
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr 1fr 1fr;
+  }
+
+  .vinyl-text-tab {
+    margin-inline: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .vinyl-text-tab p {
+    margin-inline: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .product-card-icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cart-button-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .cart-button {
+    display: flex;
+
+    align-items: center;
+
+    border: 1px solid #b8b2c12d;
+    background-color: #f9b789;
+    padding-inline-start: 10px;
+    padding-inline-end: 15px;
+
+    border-radius: 72px;
+  }
+
+  .cart-button:hover {
+    display: flex;
+
+    align-items: center;
+
+    border: 1px solid #f9b789;
+    background-color: #b6dcdb;
+    padding-inline-start: 10px;
+    padding-inline-end: 15px;
+    cursor: pointer;
+    border-radius: 72px;
+  }
+
+  .item-heart {
+    width: 100px;
+    cursor: pointer;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+}

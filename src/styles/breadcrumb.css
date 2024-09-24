@@ -1,0 +1,28 @@
+/* Breadcrumb.css */
+.breadcrumb {
+  display: grid;
+  grid-template-rows: 1fr;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.breadcrumb ul {
+  list-style: none; /* Remove default list styling */
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  justify-content: left;
+}
+
+.breadcrumb-item a {
+  text-decoration: none; /* Remove underline from links */
+}
+
+.breadcrumb-item a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.separator {
+  margin: 10px;
+}

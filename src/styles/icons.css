@@ -38,7 +38,22 @@
   background-size: 100% 100%;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23346ca3' d='M19 12.998h-6v6h-2v-6H5v-2h6v-6h2v6h6z'/%3E%3C/svg%3E");
 }
-
+.mdi--heart {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23346ca3' d='m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53z'/%3E%3C/svg%3E");
+}
+.ic--baseline-minus {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23346ca3' d='M19 12.998H5v-2h14z'/%3E%3C/svg%3E");
+}
 .nav-icons {
   display: flex;
   justify-content: center;
@@ -50,6 +65,9 @@
   max-width: 200px;
 }
 .shop-card-icons .mdi--heart-outline {
+  margin-left: 100%;
+}
+.shop-card-icons .mdi--heart {
   margin-left: 100%;
 }
 .shop-card-icons .mdi--cart-outline {

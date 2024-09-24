@@ -23,7 +23,7 @@ export default function Shop() {
               <div key={index} className="shop-vinyl-row">
                 {/* Map over the group of 5 vinyl items */}
                 {vinylGroup.map((image) => (
-                  <ShopVinylCard key={image.id} image={image} />
+                  <ShopVinylCard key={image.name} image={image} />
                 ))}
               </div>
             ))}

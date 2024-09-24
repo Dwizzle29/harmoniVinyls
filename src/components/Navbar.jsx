@@ -57,8 +57,12 @@ function Navbar() {
           </NavLink>
         </div>
         <div className="nav-icons">
-          <span className="mdi--heart-outline"></span>
-          <span className="mdi--cart-outline"></span>
+          <NavLink to="/wishlist">
+            <span className="mdi--heart-outline"></span>
+          </NavLink>
+          <NavLink to="/cart">
+            <span className="mdi--cart-outline"></span>
+          </NavLink>
         </div>
       </div>
     </nav>
