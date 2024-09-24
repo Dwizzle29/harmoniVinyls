@@ -6,7 +6,7 @@ const HomeItemCard = ({ image }) => {
   return (
     <div className="card">
       <div className="card-images">
-        <a href={`/product/${image.name}`}>
+        <a href={`/shop/${image.name}`}>
           <img
             src={image.image}
             alt={`image-${image.id}`}
