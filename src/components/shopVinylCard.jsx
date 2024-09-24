@@ -14,7 +14,7 @@ const ShopVinylCard = ({ image }) => {
           onMouseLeave={() => setHidden(true)}
         >
           {hidden ? (
-            <a href={`/shop/${image.name}`}>
+            <a href={`/product/${image.name}`}>
               <img
                 src={image.image}
                 alt={`image-${image.id}`}
@@ -24,7 +24,7 @@ const ShopVinylCard = ({ image }) => {
               <p>{image.price}</p>
             </a>
           ) : (
-            <a href={`/shop/${image.name}`}>
+            <a href={`/product/${image.name}`}>
               <img
                 src={image.back}
                 alt={`image-${image.id}`}

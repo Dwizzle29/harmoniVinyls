@@ -11,7 +11,7 @@ const Breadcrumb = () => {
   // Build the breadcrumbs array
 
   const labelMapping = {
-    shop: "Products",
+    product: "Products",
     imageId: "name",
   };
 
