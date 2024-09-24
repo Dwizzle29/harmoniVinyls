@@ -12,16 +12,22 @@ const Breadcrumb = () => {
 
   const labelMapping = {
     product: "Products",
-    imageId: "name",
+    // Add a default label for dynamic IDs or handle conditionally
   };
+
+  // Check if the segment is a number (assuming that's an imageId)
+  const isNumeric = (segment) => /^\d+$/.test(segment);
 
   const breadcrumbs = pathSegments.map((segment, index) => {
     const path = `/${pathSegments.slice(0, index + 1).join("/")}`;
+    const label =
+      labelMapping[segment] ||
+      (isNumeric(segment)
+        ? "Image Name"
+        : segment.charAt(0).toUpperCase() + segment.slice(1));
     return {
-      label:
-        labelMapping[segment] ||
-        segment.charAt(0).toUpperCase() + segment.slice(1), // Use mapping if available
-      path: path,
+      label,
+      path,
     };
   });
 
