@@ -88,15 +88,16 @@
 
   .cart-button-container {
     display: flex;
-    align-items: center;
+
     flex-wrap: nowrap;
   }
 
   .cart-button {
+    font-family: normalidad-extended, sans-serif;
+    color: #426b9f;
+    font-weight: 500;
     display: flex;
-
     align-items: center;
-
     border: 1px solid #b8b2c12d;
     background-color: #f9b789;
     padding-inline-start: 10px;
@@ -105,6 +106,9 @@
     border-radius: 72px;
   }
 
+  .cart-button p {
+    margin-block-end: 13px;
+  }
   .cart-button:hover {
     display: flex;
 

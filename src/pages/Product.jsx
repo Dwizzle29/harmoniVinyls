@@ -35,12 +35,12 @@ const Product = () => {
                 >
                   {plusIcon ? (
                     <div className="cart-button">
-                      <span class="ic--baseline-plus"></span>
+                      <span className="ic--baseline-plus"></span>
                       <p>Add to Cart</p>
                     </div>
                   ) : (
                     <div className="cart-button">
-                      <span class="ic--baseline-minus"></span>
+                      <span className="ic--baseline-minus"></span>
                       <p>Remove From Cart</p>
                     </div>
                   )}
@@ -52,7 +52,7 @@ const Product = () => {
                   {heartIcon ? (
                     <span className="mdi--heart-outline"></span>
                   ) : (
-                    <span class="mdi--heart"></span>
+                    <span className="mdi--heart"></span>
                   )}
                 </div>
               </div>
