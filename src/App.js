@@ -6,6 +6,7 @@ import "./styles/footer.css";
 import "./styles/shop.css";
 import "./styles/breadcrumb.css";
 import "./styles/product.css";
+import "./styles/filterComp.css";
 
 import React from "react";
 import Navbar from "./components/Navbar.jsx";

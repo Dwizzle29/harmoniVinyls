@@ -20,7 +20,9 @@ const ShopVinylCard = ({ image }) => {
                 alt={`image-${image.id}`}
                 className="card-vinyl-image"
               />
-              <p>{image.name}</p>
+              <p>
+                {image.title} - ("{image.release}")
+              </p>
               <p>{image.price}</p>
             </a>
           ) : (
@@ -30,7 +32,9 @@ const ShopVinylCard = ({ image }) => {
                 alt={`image-${image.id}`}
                 className="card-vinyl-image"
               />
-              <p>{image.name}</p>
+              <p>
+                {image.title} - {image.release}
+              </p>
               <p>{image.price}</p>
             </a>
           )}
@@ -38,16 +42,16 @@ const ShopVinylCard = ({ image }) => {
         <div className="shop-card-icons">
           <div onClick={() => setIconPlus(!plusIcon)}>
             {plusIcon ? (
-              <span class="ic--baseline-plus"></span>
+              <span className="ic--baseline-plus"></span>
             ) : (
-              <span class="ic--baseline-minus"></span>
+              <span className="ic--baseline-minus"></span>
             )}
           </div>
           <div onClick={() => setIconHeart(!heartIcon)}>
             {heartIcon ? (
               <span className="mdi--heart-outline"></span>
             ) : (
-              <span class="mdi--heart"></span>
+              <span className="mdi--heart"></span>
             )}
           </div>
         </div>

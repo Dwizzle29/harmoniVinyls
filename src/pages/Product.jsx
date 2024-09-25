@@ -5,6 +5,7 @@ import { useState } from "react";
 
 const Product = () => {
   const { imageId } = useParams();
+
   const [heartIcon, setIconHeart] = useState(true);
   const [plusIcon, setIconPlus] = useState(true);
   // Find the specific image that matches the passed imageId
@@ -20,13 +21,13 @@ const Product = () => {
         <div className="vinyl-item-card">
           <img
             src={selectedImage.image}
-            alt={selectedImage.name}
+            alt={selectedImage.title}
             className="item-images"
           />
 
           <div className="vinyl-text">
-            <h1>{selectedImage.name}</h1>
-            <p>{selectedImage.description}</p>
+            <h1>{selectedImage.artist}</h1>
+            <h2>{selectedImage.title}</h2>
             <div>
               <div className="product-card-icons">
                 <div
@@ -59,7 +60,6 @@ const Product = () => {
             </div>
 
             <div className="vinyl-text-tab">
-              <p>description</p>
               <p>about</p>
               <p>type</p>
             </div>
