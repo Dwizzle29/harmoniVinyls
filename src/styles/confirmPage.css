@@ -1,4 +1,40 @@
 @media screen and (max-width: 1200px) {
+  .confirm-form-card {
+    width: 400px;
+    height: 320px;
+    background-color: #b8b2c118;
+    border: 1px solid #b8b2c138;
+    margin: 20px;
+    display: grid;
+    grid-template-rows: 0.5fr 2fr;
+    place-items: center;
+  }
+  .confirm-form-card h2 {
+    color: #346ba3;
+    font-size: xx-large;
+
+    font-weight: 100;
+  }
+  .confirm-order-card h2 {
+    color: #346ba3;
+    font-size: xx-large;
+
+    font-weight: 100;
+  }
+  .confirm-content {
+    font-size: x-large;
+    text-align: center;
+  }
+  .confirm-order-card {
+    width: 400px;
+    height: 420px;
+    background-color: #b8b2c118;
+    border: 1px solid #b8b2c138;
+    margin: 20px;
+    display: grid;
+    grid-template-rows: 0.5fr 2fr;
+    place-items: center;
+  }
 }
 
 @media screen and (min-width: 1200px) {

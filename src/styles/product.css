@@ -12,8 +12,8 @@
   .vinyl-item-card {
     height: 400px;
     width: 90%;
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 200px;
+    max-height: 200px;
     margin-inline: 10px;
     margin-block: 10px;
     padding: 10px;
@@ -29,6 +29,261 @@
   .item-images {
     max-height: 350px;
     min-height: 100px;
+  }
+
+  .product-slide-prev {
+    display: flex;
+    margin-inline-end: -34px;
+    margin-block-start: 215px;
+    margin-block-end: 70px;
+    z-index: 999;
+    background-color: #bbd6e13a;
+    border-radius: 72px;
+    justify-content: center;
+    align-items: center;
+  }
+  .product-form-input {
+    background-color: #b8b2c148;
+    border-radius: 72px;
+    border: 1px solid #1e1e1e;
+    max-width: 492px;
+    height: 37px;
+    font-size: medium;
+    cursor: pointer;
+    font-family: normalidad-extended, sans-serif;
+    color: #374244;
+    padding-left: 10px;
+  }
+  .product-slide-prev:hover {
+    display: flex;
+    margin-inline-end: -34px;
+    margin-block-start: 215px;
+    margin-block-end: 70px;
+    z-index: 999;
+    cursor: pointer;
+    background-color: #bbd6e1b5;
+    cursor: pointer;
+    border-radius: 72px;
+    justify-content: center;
+    align-items: center;
+  }
+  .product-slide-next {
+    display: flex;
+    margin-inline-start: -36px;
+    margin-block-start: 415px;
+    margin-block-end: 70px;
+    z-index: 999;
+    background-color: #bbd6e13a;
+    border-radius: 72px;
+    justify-content: center;
+    align-items: center;
+  }
+  .product-slide-next:hover {
+    display: flex;
+    margin-inline-start: -36px;
+    margin-block-start: 415px;
+    margin-block-end: 70px;
+    z-index: 999;
+    cursor: pointer;
+    background-color: #bbd6e1b5;
+    border-radius: 72px;
+    justify-content: center;
+    align-items: center;
+  }
+  .item-images {
+    max-height: 400px;
+    min-height: 400px;
+    max-width: 400px;
+    min-width: 400px;
+    background-color: #bbd6e13a;
+  }
+
+  .vinyl-text {
+    margin-left: 20px;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr 1fr 1.3fr;
+  }
+
+  .vinyl-text-tab {
+    margin-inline-end: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .text-tab-about:hover {
+    background-color: #f9b789;
+    cursor: pointer;
+    border: 5px solid #ee9e92;
+  }
+  .text-tab-type:hover {
+    background-color: #f9b789;
+    cursor: pointer;
+    border: 5px solid #ee9e92;
+  }
+  .vinyl-text-tab p {
+    border-bottom: 1px solid #ee9e92;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .vinyl-text-tab .text-tab-highlight {
+    border: 5px solid #ee9e92;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .artist-stock {
+    display: grid;
+    grid-template-columns: 0.48fr 1fr;
+  }
+  .vinyl-text-tab p {
+    margin-inline-end: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .product-card-icons {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+  }
+
+  .cart-button-container {
+    display: flex;
+
+    flex-wrap: nowrap;
+  }
+
+  .cart-button {
+    font-family: normalidad-extended, sans-serif;
+    color: #426b9f;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    border: 1px solid #f9b789;
+    background-color: #f9b789;
+    padding-inline-start: 10px;
+    padding-inline-end: 15px;
+
+    border-radius: 72px;
+  }
+  .product-email-button {
+    font-family: normalidad-extended, sans-serif;
+    color: #426b9f;
+    font-weight: 500;
+
+    border: 1px solid #f9b789;
+    background-color: #f9b789;
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
+    margin-left: 30px;
+    border-radius: 72px;
+    height: 50px;
+    width: 100px;
+  }
+  .product-email-button:hover {
+    font-family: normalidad-extended, sans-serif;
+    color: #426b9f;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid #f9b789;
+    background-color: #b6dcdb;
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
+    margin-left: 30px;
+    border-radius: 72px;
+    height: 50px;
+    width: 100px;
+  }
+  .vinyl-text-play {
+    display: grid;
+    grid-template-columns: 5fr 0.5fr;
+  }
+  .form-email {
+    margin-inline-start: 40px;
+    max-height: 100px;
+  }
+  .items-left {
+    border-bottom: 4px solid #f9b789;
+    border-radius: 10px;
+    margin-block-end: 0;
+    padding: 10px;
+    max-width: 200px;
+    max-height: 20px;
+    text-align: center;
+
+    margin-top: 12px;
+    padding-bottom: 2px;
+  }
+  .cart-button p {
+    margin-block-end: 13px;
+  }
+  .cart-button:hover {
+    display: flex;
+
+    align-items: center;
+
+    border: 1px solid #f9b789;
+    background-color: #b6dcdb;
+    padding-inline-start: 10px;
+    padding-inline-end: 15px;
+    cursor: pointer;
+    border-radius: 72px;
+  }
+  .pause-play {
+    display: flex;
+    align-items: center;
+    margin-block: 20px;
+    cursor: pointer;
+  }
+  .item-heart {
+    width: 100px;
+    cursor: pointer;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  .heroicons-solid--pause {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='%23f9b789' fill-rule='evenodd' d='M18 10a8 8 0 1 1-16 0a8 8 0 0 1 16 0M7 8a1 1 0 0 1 2 0v4a1 1 0 1 1-2 0zm5-1a1 1 0 0 0-1 1v4a1 1 0 1 0 2 0V8a1 1 0 0 0-1-1' clip-rule='evenodd'/%3E%3C/svg%3E");
+  }
+  .icon-park-solid--play {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cdefs%3E%3Cmask id='ipSPlay0'%3E%3Cg fill='none' stroke-linejoin='round' stroke-width='4'%3E%3Cpath fill='%23fff' stroke='%23fff' d='M24 44c11.046 0 20-8.954 20-20S35.046 4 24 4S4 12.954 4 24s8.954 20 20 20Z'/%3E%3Cpath fill='%23000' stroke='%23000' d='M20 24v-6.928l6 3.464L32 24l-6 3.464l-6 3.464z'/%3E%3C/g%3E%3C/mask%3E%3C/defs%3E%3Cpath fill='%23f9b789' d='M0 0h48v48H0z' mask='url(%23ipSPlay0)'/%3E%3C/svg%3E");
+  }
+  .audio-card {
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr 2fr;
+    place-items: center;
+  }
+  .audio-image-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 300px;
+  }
+  .audio-images {
+    min-width: 300px;
+    min-height: 300px;
+    max-width: 300px;
+    max-height: 300px;
+  }
+  .card-recommended h3 {
+    margin-top: 60px;
+    text-align: center;
+  }
+  .vinyl-item-page h3 {
+    color: #426b9f;
+    font-family: auster, sans-serif;
+    font-weight: 200;
+    font-size: x-large;
   }
 }
 

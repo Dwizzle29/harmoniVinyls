@@ -1,4 +1,3 @@
-import { useState } from "react";
 import background from "../assets/backgroundConfirm.png";
 import { NavLink } from "react-router-dom";
 
