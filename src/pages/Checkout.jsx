@@ -1,6 +1,5 @@
 import { useState } from "react";
 import background from "../assets/backgroundCheckout.png";
-import albums from "../components/data/images.js";
 import { NavLink } from "react-router-dom";
 
 export default function Checkout() {

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import albums from "../components/data/images.js"; // Assuming albums is imported from a central data source
+
 import "../styles/shop.css"; // Import your CSS for styling
 
 const ShopVinylCard = ({ image }) => {
@@ -12,9 +12,6 @@ const ShopVinylCard = ({ image }) => {
     setInCart(!inCart);
 
     // Find the album in the albums array and update its cart value
-    const updatedAlbums = albums.map((album) =>
-      album.id === id ? { ...album, cart: !inCart } : album
-    );
 
     // Optionally, if you want to save this change globally, you'd pass this updatedAlbums to a higher-level component or state management.
   };
