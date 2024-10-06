@@ -40,11 +40,10 @@ export default function Shop() {
             ))}
         </div>
         <div className="pagination">
-          <p>arrow</p>
+          <br></br>
           <NavLink to="/shops" className="next-pagination">
-            1
+            next
           </NavLink>
-          <p>arrow</p>
         </div>
       </div>
     </div>
