@@ -1,0 +1,11 @@
+.construction-title {
+  color: rgb(233, 113, 113);
+}
+.container {
+  max-width: 500px;
+  margin-inline: auto;
+}
+.information {
+  display: grid;
+  grid-template-rows: 1fr;
+}

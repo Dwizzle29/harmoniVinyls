@@ -1,11 +1,24 @@
-// Card.js
-import React from "react";
+import React, { useState } from "react";
+import albums from "../components/data/images.js"; // Assuming albums is imported from a central data source
 import "../styles/shop.css"; // Import your CSS for styling
-import { useState } from "react";
+
 const ShopVinylCard = ({ image }) => {
   const [hidden, setHidden] = useState(true);
-  const [heartIcon, setIconHeart] = useState(true);
-  const [plusIcon, setIconPlus] = useState(true);
+  const [inCart, setInCart] = useState(image.cart); // Initialize with the album's cart status
+  const [heartIcon, setHeartIcon] = useState(true);
+
+  const handleCartToggle = (id) => {
+    // Toggle the inCart state (add to cart if not in, remove if already in)
+    setInCart(!inCart);
+
+    // Find the album in the albums array and update its cart value
+    const updatedAlbums = albums.map((album) =>
+      album.id === id ? { ...album, cart: !inCart } : album
+    );
+
+    // Optionally, if you want to save this change globally, you'd pass this updatedAlbums to a higher-level component or state management.
+  };
+
   return (
     <div className="card-vinyl">
       <div className="card-vinyls-images">
@@ -21,7 +34,9 @@ const ShopVinylCard = ({ image }) => {
                 className="card-vinyl-image"
               />
               <p>
-                {image.title} - ("{image.release}")
+                <span>{image.artist} - </span>
+                <br />
+                {image.title} ({image.release})
               </p>
               <p>{image.price}</p>
             </a>
@@ -33,21 +48,27 @@ const ShopVinylCard = ({ image }) => {
                 className="card-vinyl-image"
               />
               <p>
-                {image.title} - {image.release}
+                <span>{image.artist} - </span>
+                <br />
+                {image.title} ({image.release})
               </p>
               <p>{image.price}</p>
             </a>
           )}
         </div>
+
         <div className="shop-card-icons">
-          <div onClick={() => setIconPlus(!plusIcon)}>
-            {plusIcon ? (
-              <span className="ic--baseline-plus"></span>
-            ) : (
+          {/* Plus/Minus icon to add/remove from cart */}
+          <div onClick={() => handleCartToggle(image.id)}>
+            {inCart ? (
               <span className="ic--baseline-minus"></span>
+            ) : (
+              <span className="ic--baseline-plus"></span>
             )}
           </div>
-          <div onClick={() => setIconHeart(!heartIcon)}>
+
+          {/* Heart icon to toggle liked state */}
+          <div onClick={() => setHeartIcon(!heartIcon)}>
             {heartIcon ? (
               <span className="mdi--heart-outline"></span>
             ) : (

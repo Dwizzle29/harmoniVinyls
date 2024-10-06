@@ -1,47 +1,200 @@
 import React, { useState } from "react";
-import albums from "../components/data/images.js";
 
-const FilterComp = ({ onFilterChange }) => {
-  const [selectedValue, setSelectedValue] = useState("");
+const FilterComp = () => {
+  const [selectedValue, setSelectedValue] = useState(false);
+  const [isDropdownFilterOpen, setIsDropdownFilterOpen] = useState(false);
 
-  const handleSort = (sortType) => {
-    let sortedArray = [...albums];
+  const handleSelect = (event) => {
+    setSelectedValue(event.target.checked);
+  };
 
-    switch (sortType) {
-      case "release":
-        sortedArray.sort((a, b) => parseInt(b.release) - parseInt(a.release));
-        break;
-      case "priceLowToHigh":
-        sortedArray.sort(
-          (a, b) => parseFloat(a.price.slice(1)) - parseFloat(b.price.slice(1))
-        );
-        break;
-      case "priceHighToLow":
-        sortedArray.sort(
-          (a, b) => parseFloat(b.price.slice(1)) - parseFloat(a.price.slice(1))
-        );
-        break;
-      default:
-        break;
-    }
+  const toggleDropdown = () => {
+    setIsDropdownFilterOpen((prev) => !prev);
+  };
 
-    onFilterChange(sortedArray); // Pass the sorted array back to the Shop component
+  const closeDropdown = () => {
+    setIsDropdownFilterOpen(false);
   };
 
   return (
-    <div className="container-button-row">
-      <select
-        value={selectedValue}
-        onChange={(e) => {
-          setSelectedValue(e.target.value);
-          handleSort(e.target.value);
-        }}
-      >
-        <option value="">Select Filter</option>
-        <option value="release">Order by Release Year</option>
-        <option value="priceLowToHigh">Price: Low to High</option>
-        <option value="priceHighToLow">Price: High to Low</option>
-      </select>
+    <div className="container-filter-row">
+      <div className="filter-button">
+        <div className="dropdown-filter" onClick={toggleDropdown}>
+          <span>filter</span>
+        </div>
+        {isDropdownFilterOpen && (
+          <div className="dropdown-list-filter">
+            <div className="filter-item-title">Genre</div>
+            <div className="filter-item">
+              <label>pop & rock</label>
+              <input
+                type="checkbox"
+                checked={selectedValue}
+                onChange={handleSelect}
+                className="filter-check"
+              />
+            </div>
+            <div className="filter-item">
+              <label>alternative</label>
+              <input
+                type="checkbox"
+                checked={selectedValue}
+                onChange={handleSelect}
+                className="filter-check"
+              />
+            </div>
+            <div className="filter-item">
+              <label>rnb</label>
+              <input
+                type="checkbox"
+                checked={selectedValue}
+                onChange={handleSelect}
+                className="filter-check"
+              />
+            </div>
+            <div className="filter-item">
+              <label>electronic</label>
+              <input
+                type="checkbox"
+                checked={selectedValue}
+                onChange={handleSelect}
+                className="filter-check"
+              />
+            </div>
+            <div className="filter-item">
+              <label>indie</label>
+              <input
+                type="checkbox"
+                checked={selectedValue}
+                onChange={handleSelect}
+                className="filter-check"
+              />
+            </div>
+
+            <div className="filter-item-title">availability</div>
+            <div className="filter-item">
+              <label>in stock</label>
+              <input
+                type="checkbox"
+                checked={selectedValue}
+                onChange={handleSelect}
+                className="filter-check"
+              />
+            </div>
+            <div className="filter-item">
+              <label>awaiting restock</label>
+              <input
+                type="checkbox"
+                checked={selectedValue}
+                onChange={handleSelect}
+                className="filter-check"
+              />
+            </div>
+            <div className="filter-item">
+              <label>coming soon</label>
+              <input
+                type="checkbox"
+                checked={selectedValue}
+                onChange={handleSelect}
+                className="filter-check"
+              />
+            </div>
+
+            <div className="filter-item-title">vinyl colour</div>
+            <div className="filter-item">
+              <label>black</label>
+              <input
+                type="checkbox"
+                checked={selectedValue}
+                onChange={handleSelect}
+                className="filter-check"
+              />
+            </div>
+            <div className="filter-item">
+              <label>clear</label>
+              <input
+                type="checkbox"
+                checked={selectedValue}
+                onChange={handleSelect}
+                className="filter-check"
+              />
+            </div>
+            <div className="filter-item">
+              <label>white</label>
+              <input
+                type="checkbox"
+                checked={selectedValue}
+                onChange={handleSelect}
+              />
+            </div>
+            <div className="filter-item">
+              <label>red</label>
+              <input
+                type="checkbox"
+                checked={selectedValue}
+                onChange={handleSelect}
+                className="filter-check"
+              />
+            </div>
+            <div className="filter-item">
+              <label>blue</label>
+              <input
+                type="checkbox"
+                checked={selectedValue}
+                onChange={handleSelect}
+                className="filter-check"
+              />
+            </div>
+            <div className="filter-item">
+              <label>multi</label>
+              <input
+                type="checkbox"
+                checked={selectedValue}
+                onChange={handleSelect}
+                className="filter-check"
+              />
+            </div>
+            <div className="filter-item">
+              <label>pink</label>
+              <input
+                type="checkbox"
+                checked={selectedValue}
+                onChange={handleSelect}
+                className="filter-check"
+              />
+            </div>
+            <div className="filter-item">
+              <label>purple</label>
+              <input
+                type="checkbox"
+                checked={selectedValue}
+                onChange={handleSelect}
+                className="filter-check"
+              />
+            </div>
+            <div className="filter-item">
+              <label>green</label>
+              <input
+                type="checkbox"
+                checked={selectedValue}
+                onChange={handleSelect}
+                className="filter-check"
+              />
+            </div>
+            <div className="filter-item">
+              <label>yellow</label>
+              <input
+                type="checkbox"
+                checked={selectedValue}
+                onChange={handleSelect}
+                className="filter-check"
+              />
+            </div>
+
+            <button onClick={closeDropdown}>apply</button>
+          </div>
+        )}
+      </div>
     </div>
   );
 };

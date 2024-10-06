@@ -3,10 +3,25 @@ import HomeItemCard from "../components/homeItemCard.jsx";
 import images from "../components/data/images.js";
 import background from "../assets/backgorund2.png";
 import logo from "../assets/logo.png";
-import carosel from "../assets/caroselToBeAdded.png";
+import Carousel from "../components/homeCarosel.jsx";
+import willowFront from "../assets/willowFront.png";
+import SabrinaFront from "../assets/Sabrina2Front.png";
+import MidnightConfettiFront from "../assets/MidnightConfettiFront.png";
+import NeoDaydreemsFront from "../assets/NeoDaydreemsFront.png";
 export default function Home() {
   // Filter the images to get only featured items
   const featuredVinyl = images.filter((image) => image.isFeatured);
+  const imageArray = [
+    willowFront,
+    SabrinaFront,
+    MidnightConfettiFront,
+    NeoDaydreemsFront,
+    willowFront,
+    SabrinaFront,
+    MidnightConfettiFront,
+    NeoDaydreemsFront,
+    // Add more image paths as needed
+  ];
 
   return (
     <div className="home-container">
@@ -20,7 +35,9 @@ export default function Home() {
       </div>
       <div className="home-carousel-container">
         <h1>new releases!</h1>
-        <img src={carosel} alt="Carousel Banner" className="carousel-img"></img>
+        <div className="home-carosel">
+          <Carousel images={imageArray} />
+        </div>
       </div>
 
       <div className="home-logo-container">

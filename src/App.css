@@ -9,9 +9,12 @@ a:active {
   color: #647fa7;
   text-decoration: none;
 }
-a:hover {
+.dropdownItem a:hover {
   color: #346ca3;
   text-decoration: none;
+  background-color: #346ba364;
+  padding-inline: 10px;
+  border-radius: 10px;
 }
 
 .App {

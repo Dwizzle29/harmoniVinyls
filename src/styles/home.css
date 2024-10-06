@@ -19,12 +19,7 @@
     max-inline-size: 100%;
     object-fit: cover;
   }
-  .home-carousel-container {
-    margin-inline: 10px;
-    display: grid;
-    grid-template-rows: 1fr;
-    place-items: center;
-  }
+
   .home-carousel-container h1 {
     margin-bottom: 0;
 
@@ -90,24 +85,28 @@
     max-inline-size: 100%;
     object-fit: none;
   }
-  .home-carousel-container {
-    margin-inline: 10px;
-    display: grid;
-    grid-template-rows: 1fr;
-    place-items: center;
+  .home-carosel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    width: 800px;
+
+    max-inline-size: 100%;
+    overflow: hidden;
+    border-radius: 72px;
+    z-index: 100;
+    -webkit-box-shadow: 4px 2px #222, -4px 0 2px #222;
+    -moz-box-shadow: 4px 0 2px #222, -4px 0 2px #222;
+    box-shadow: inset 4px 0 50px #8b8c8754, inset -4px -12px 50px #c4c4c335;
   }
   .home-carousel-container h1 {
     margin-bottom: 0;
-
+    text-align: center;
     font-family: normalidad-ultraextended, sans-serif;
     font-weight: 200;
   }
-  .carousel-img {
-    height: 340px;
-    width: 1200px;
-    max-inline-size: 100%;
-    object-fit: none;
-  }
+
   .welcome-message {
     position: absolute;
     top: 35%;

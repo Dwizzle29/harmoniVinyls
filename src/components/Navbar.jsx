@@ -2,18 +2,24 @@
 import { NavLink } from "react-router-dom";
 
 import React, { useState, useRef, useEffect } from "react";
+import { useMediaQuery } from "react-responsive";
 import logo from "../assets/logo192.png";
 function Navbar() {
   const [open, setOpen] = useState(false);
-
+  const [mobileNavOpen, setMobileNavOpen] = useState(false);
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
+  const isDesktopOrLaptop = useMediaQuery({
+    query: "(min-width: 1224px)",
+  });
   let menuRef = useRef();
 
   //handles menu drop down
   useEffect(() => {
     let handler = (e) => {
       if (!menuRef.current.contains(e.target)) {
-        setOpen(false);
-        console.log(menuRef.current);
+        if (!setMobileNavOpen) {
+          setOpen(false);
+        }
       }
     };
 
@@ -42,11 +48,63 @@ function Navbar() {
             ></span>
 
             <div className={`dropdown-menu ${open ? "active" : "inactive"}`}>
-              <ul className="navDropDown">
-                <DropdownNavItem link={"/shop"} navText={"Vinyls"} />
-                <DropdownNavItem link={"/about"} navText={"About"} />
-                <DropdownNavItem link={"/login"} navText={"Login"} />
-              </ul>
+              {isTabletOrMobile && (
+                <ul className="navDropDown">
+                  <DropdownNavItem link={"/"} navText={"home"} />
+                  <div className="dropdownContent">
+                    <DropdownNavItem link={"/shop"} navText={"vinyls"} />
+                    <div className="dropdownShop">
+                      <ul>
+                        <li>
+                          <NavLink to="/pagenotfound">
+                            <p className="dropDownItems"> new releases</p>
+                          </NavLink>
+                        </li>
+                        <li>
+                          <p className="dropDownItems">popular</p>
+                        </li>
+                        <li>
+                          <p className="dropDownItems">clearance</p>
+                        </li>
+                        <li>
+                          <p className="dropDownItems">accessories</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <DropdownNavItem link={"/about"} navText={"about"} />
+                  <DropdownNavItem link={"/login"} navText={"login"} />
+                </ul>
+              )}
+              {isDesktopOrLaptop && (
+                <ul className="navDropDown">
+                  <DropdownNavItem link={"/"} navText={"home"} />
+                  <div className="dropdownContent">
+                    <DropdownNavItem link={"/shop"} navText={"vinyls"} />
+                    <div className="dropdownShop">
+                      <ul>
+                        <li>
+                          <NavLink to="/pagenotfound">
+                            <p className="dropDownItems"> new releases</p>
+                          </NavLink>
+                        </li>
+                        <li>
+                          <p className="dropDownItems">popular</p>
+                        </li>
+                        <li>
+                          <p className="dropDownItems">clearance</p>
+                        </li>
+                        <li>
+                          <p className="dropDownItems">accessories</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <DropdownNavItem link={"/about"} navText={"about"} />
+                  <DropdownNavItem link={"/login"} navText={"login"} />
+                </ul>
+              )}
             </div>
           </div>
         </div>

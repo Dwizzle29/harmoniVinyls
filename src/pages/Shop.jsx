@@ -1,16 +1,13 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 import background from "../assets/backgroundSmall.png";
-import images from "../components/data/images.js";
+import albums from "../components/data/images.js";
 import ShopVinylCard from "../components/shopVinylCard.jsx";
 import FilterComp from "../components/filterComp.jsx";
+import SortComp from "../components/sortComp.jsx";
 
 export default function Shop() {
-  const [filteredVinyl, setFilteredVinyl] = useState(images); // Default to all albums
-
-  // Function to handle the sorting filter
-  const handleFilterChange = (sortedAlbums) => {
-    setFilteredVinyl(sortedAlbums); // Update state with sorted albums
-  };
+  const [filteredAlbums, setFilteredAlbums] = useState(albums);
 
   return (
     <div>
@@ -20,14 +17,18 @@ export default function Shop() {
         </div>
         <div className="filtering-functions">
           {/* Pass the sorting handler to FilterComp */}
-          <FilterComp onFilterChange={handleFilterChange} />
+          <FilterComp />
+          <SortComp onSortChange={setFilteredAlbums} />
         </div>
         <div className="shop-cards-grid">
           {/* Map the filtered and sorted vinyls */}
-          {filteredVinyl
+          {filteredAlbums
+            .slice(0, 8)
             .reduce(
               (acc, _, i) =>
-                i % 3 === 0 ? acc.concat([filteredVinyl.slice(i, i + 3)]) : acc,
+                i % 3 === 0
+                  ? acc.concat([filteredAlbums.slice(i, i + 3)])
+                  : acc,
               []
             )
             .map((vinylGroup, index) => (
@@ -37,6 +38,13 @@ export default function Shop() {
                 ))}
               </div>
             ))}
+        </div>
+        <div className="pagination">
+          <p>arrow</p>
+          <NavLink to="/shops" className="next-pagination">
+            1
+          </NavLink>
+          <p>arrow</p>
         </div>
       </div>
     </div>
