@@ -23,6 +23,7 @@ import Product from "./pages/Product.jsx";
 import About from "./pages/About.jsx";
 import Checkout from "./pages/Checkout.jsx";
 import Cart from "./pages/Cart.jsx";
+import Confirmation from "./pages/Confirmation.jsx";
 import Wishlist from "./pages/Wishlist.jsx";
 import Footer from "./components/footer.jsx";
 import Breadcrumb from "./components/breadcrumb.jsx";
@@ -46,6 +47,7 @@ function App() {
           <Route path="/about" element={<About />}></Route>
           <Route path="/cart" element={<Cart />}></Route>
           <Route path="/wishlist" element={<Wishlist />}></Route>
+          <Route path="/confirmation" element={<Confirmation />}></Route>
           <Route path="/checkout" element={<Checkout />}></Route>
           <Route path="/pagenotfound" element={<PageInConstruction />}></Route>
           <Route path="*" element={<h1>PAGE NOT FOUND</h1>}></Route>

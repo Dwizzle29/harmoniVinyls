@@ -191,12 +191,12 @@ export default function Checkout() {
               />
               <span className="checkmark"></span>card
               <span className="cards-pay">
-                <span class="logos--visa"></span>
+                <span className="logos--visa"></span>
               </span>
               <span className="cards-pay"></span>{" "}
-              <span class="logos--mastercard"></span>
+              <span className="logos--mastercard"></span>
               <span className="cards-pay">
-                <span class="fontisto--american-express"></span>
+                <span className="fontisto--american-express"></span>
               </span>
             </label>
 
@@ -267,27 +267,20 @@ export default function Checkout() {
         <div className="checkout-info-box">
           <div className="checkout-summary-info">
             <h2>shipping information</h2>
-            <NavLink to={"/confirm"} className="confirm-box">
+            <NavLink to={"/confirmation"} className="confirm-box">
               <button className="checkout-button">
-                <span class="material-symbols--lock"></span>
+                <span className="material-symbols--lock"></span>
                 place order
               </button>{" "}
             </NavLink>
-            <p>
+            <span>
               by placing your order, you are agreeing to our{" "}
               <NavLink to={"/about"}>privacy policy</NavLink> and
               <NavLink to={"/about"}> terms & conditions</NavLink>
-            </p>
+            </span>
           </div>
         </div>
       </div>
     </div>
   );
-}
-
-function search(event) {
-  event.preventDefault();
-  const formData = new FormData(event.target);
-  const query = formData.get("query");
-  alert(`Sorry '${query}' is not a valid discount code`);
 }
